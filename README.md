@@ -8,3 +8,19 @@ Phân công:
 + Programmer/Game Tester: Huỳnh Trần Khánh Quỳnh
 + Sub Programmer/Artist: Huỳnh lê Đan Linh
 + Sub Programmer/Artist: Nguyễn Thị Mỹ Như
+Task Breakdown:
+- Main mechanics 
++ Quản lý thẻ lật
++ Logic match 
++ Animation
++ Lật bài
++ Hủy bài (nếu match)
+- UI design/implement
++ HUD
++ Main menu
++ Option window
++ Pause menu
+- UI implement
+- Sound:
++ Button sound FX
++ Nhạc nền
