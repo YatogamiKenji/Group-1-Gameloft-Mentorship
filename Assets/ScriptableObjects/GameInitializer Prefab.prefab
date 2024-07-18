@@ -74,10 +74,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 720, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -148,8 +148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a633abb77b3bc46bb09294f775b9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardField: {fileID: 1381795265833055039}
+  cardField: {fileID: 8565208387326016342}
   cardLayout: {fileID: 3032891951779767091}
+  spacing: {x: 10, y: 5}
 --- !u!1 &5702071070293007645
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,8 +240,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
+    m_Left: 5
+    m_Right: 5
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
@@ -260,6 +261,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4786154306414036606}
   - component: {fileID: 8754609667897822100}
+  - component: {fileID: 707900927797105492}
   m_Layer: 0
   m_Name: CardManager
   m_TagString: Untagged
@@ -299,3 +301,44 @@ MonoBehaviour:
   collectionCheck: 1
   defaultCapacity: 20
   maxCapacity: 100
+  showCardTime: 0.5
+--- !u!114 &707900927797105492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7889135203801204374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5b912f9a18e91b4886e5b6de6be040c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8754609667897822100}
+        m_TargetAssemblyTypeName: CardManager, Assembly-CSharp
+        m_MethodName: LogCard
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8754609667897822100}
+        m_TargetAssemblyTypeName: CardManager, Assembly-CSharp
+        m_MethodName: FlipCard
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  publisher: {fileID: 11400000, guid: 7260a6e694470fa49abdf9e2ef6d94ac, type: 2}

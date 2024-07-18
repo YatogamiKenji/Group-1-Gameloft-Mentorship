@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: testTheme
   m_EditorClassIdentifier: 
   bgImage:
-  - {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: -649216525, guid: 183b7d5a6b9fc2248b0b55fb769b99b9, type: 3}
+  - {fileID: 1461659281, guid: 183b7d5a6b9fc2248b0b55fb769b99b9, type: 3}
   matchImages:
   - {fileID: -1415239159, guid: 3d2819786da91384f895f1da81546761, type: 3}
   - {fileID: 1145240838, guid: 3d2819786da91384f895f1da81546761, type: 3}
@@ -31,8 +31,6 @@ MonoBehaviour:
   - {fileID: 1536413671, guid: 3d2819786da91384f895f1da81546761, type: 3}
   - {fileID: -401860559, guid: 3d2819786da91384f895f1da81546761, type: 3}
   - {fileID: -1165835306, guid: 3d2819786da91384f895f1da81546761, type: 3}
-  - {fileID: -538809482, guid: 3d2819786da91384f895f1da81546761, type: 3}
-  - {fileID: 896421046, guid: 3d2819786da91384f895f1da81546761, type: 3}
   - {fileID: 1407910645, guid: 3d2819786da91384f895f1da81546761, type: 3}
   - {fileID: 1045062842, guid: 3d2819786da91384f895f1da81546761, type: 3}
   - {fileID: 1715189014, guid: 3d2819786da91384f895f1da81546761, type: 3}
