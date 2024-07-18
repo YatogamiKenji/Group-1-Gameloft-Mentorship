@@ -44,9 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95835c818bb1a3744982fadcc4552706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EventResponse:
-    m_PersistentCalls:
-      m_Calls: []
-  publisher: {fileID: 11400000, guid: edc76f76ba09b96468938eaddae0c997, type: 2}
+  resumeGameSO: {fileID: 11400000, guid: edc76f76ba09b96468938eaddae0c997, type: 2}
+  pauseGameSO: {fileID: 11400000, guid: daa3d700fde444f47875658aff208c81, type: 2}
   timerText: {fileID: 0}
   resultMessageText: {fileID: 0}
+  pausePanel: {fileID: 0}
+  resultPanel: {fileID: 0}
+  timeSlider: {fileID: 0}
