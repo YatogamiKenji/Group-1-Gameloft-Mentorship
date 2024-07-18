@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class VoidEventListener : MonoBehaviour
 {
-    [SerializeField] protected UnityEvent EventResponse;
+    [SerializeField] private UnityEvent EventResponse;
     [SerializeField] private VoidPublisherSO publisher;
 
     private void OnEnable()
