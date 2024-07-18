@@ -1,0 +1,657 @@
+fileFormatVersion: 2
+guid: 3d2819786da91384f895f1da81546761
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ThemeDauTay_1_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1610
+        width: 274
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445d0e3b2a1c9264ca2d6d9d3c289e58
+      internalID: -1415239159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_3
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 1626
+        width: 286
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63dd755cca0924f4693fa860a49d1d7e
+      internalID: 1145240838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_4
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 1624
+        width: 292
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8edc4aa81831bb940958f88d8505d4dc
+      internalID: 2139613369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_5
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1608
+        width: 289
+        height: 301
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea62640e9617aeb459fa5dd5ae5094dc
+      internalID: -203995260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_6
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 1611
+        width: 295
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d7dc5723aaceb42a89c6b6331f6319
+      internalID: -822158815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_26
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1159
+        width: 278
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c27051f47733f248bc6d59e6ae77843
+      internalID: 876877360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_27
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 1138
+        width: 301
+        height: 299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf0acacfa966764d9f8458d08146ed4
+      internalID: -2134929006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_29
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 1161
+        width: 290
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ee14145aa9dab4b9bd011463a26e53
+      internalID: 1163962091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_30
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1162
+        width: 274
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36983a8b44f72e34bb4d774d26cec802
+      internalID: 1964663886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_40
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 1148
+        width: 276
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57da588dc6750e5419b3d52366cdb89b
+      internalID: -1809051858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_45
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 674
+        width: 286
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5ddd83c55abb743a07fbfc624a7c67
+      internalID: -350444461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_46
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 672
+        width: 277
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aaa20d87abca014a882530578a4d56e
+      internalID: -1225457997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_47
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 660
+        width: 268
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8488da11bbc2da4ead96d473f1a4d2c
+      internalID: 1536413671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_50
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 665
+        width: 299
+        height: 261
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5872986c83b3268449cf9bc5cc8ef5e8
+      internalID: -401860559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_57
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 660
+        width: 278
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418fbb77c5c712f4995b7d5ab351fb41
+      internalID: -1165835306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_64
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 184
+        width: 297
+        height: 309
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd783515f54f7bc408bb2bede94c54a2
+      internalID: 1407910645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_65
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 192
+        width: 274
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8abcf2a13afc6d4aa382b31d3204e4b
+      internalID: 1045062842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_66
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 205
+        width: 307
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb565fc6ba6e38f4f8ae5eff87584d9d
+      internalID: 1715189014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_68
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 182
+        width: 278
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a547070c8c62f48ac152e2f017ea67
+      internalID: -522310596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThemeDauTay_1_72
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 197
+        width: 285
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71306d253f884dd40aa9c1a2a1e9dc0d
+      internalID: 1969158370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ThemeDauTay_1_0: -1415239159
+      ThemeDauTay_1_1: 346174900
+      ThemeDauTay_1_10: 378590709
+      ThemeDauTay_1_11: -1849117086
+      ThemeDauTay_1_12: 2007448175
+      ThemeDauTay_1_13: 828710644
+      ThemeDauTay_1_14: 164721860
+      ThemeDauTay_1_15: 1395884527
+      ThemeDauTay_1_16: 1125448199
+      ThemeDauTay_1_17: -995334690
+      ThemeDauTay_1_18: 641925575
+      ThemeDauTay_1_19: -1859456316
+      ThemeDauTay_1_2: 409196671
+      ThemeDauTay_1_20: -1335300726
+      ThemeDauTay_1_21: -1801985771
+      ThemeDauTay_1_22: 668277073
+      ThemeDauTay_1_23: 227004943
+      ThemeDauTay_1_24: -934964923
+      ThemeDauTay_1_25: -1989184595
+      ThemeDauTay_1_26: 876877360
+      ThemeDauTay_1_27: -2134929006
+      ThemeDauTay_1_28: 433722605
+      ThemeDauTay_1_29: 1163962091
+      ThemeDauTay_1_3: 1145240838
+      ThemeDauTay_1_30: 1964663886
+      ThemeDauTay_1_31: 1375941459
+      ThemeDauTay_1_32: 1693658053
+      ThemeDauTay_1_33: -1884583226
+      ThemeDauTay_1_34: 1428594987
+      ThemeDauTay_1_35: 2074956355
+      ThemeDauTay_1_36: -631212029
+      ThemeDauTay_1_37: 1424195847
+      ThemeDauTay_1_38: -178094517
+      ThemeDauTay_1_39: 1533185923
+      ThemeDauTay_1_4: 2139613369
+      ThemeDauTay_1_40: -1809051858
+      ThemeDauTay_1_41: 282196909
+      ThemeDauTay_1_42: -512669197
+      ThemeDauTay_1_43: 1269042632
+      ThemeDauTay_1_44: 707724652
+      ThemeDauTay_1_45: -350444461
+      ThemeDauTay_1_46: -1225457997
+      ThemeDauTay_1_47: 1536413671
+      ThemeDauTay_1_48: -1981711069
+      ThemeDauTay_1_49: 1801816526
+      ThemeDauTay_1_5: -203995260
+      ThemeDauTay_1_50: -401860559
+      ThemeDauTay_1_51: -949844083
+      ThemeDauTay_1_52: -43714799
+      ThemeDauTay_1_53: 187353468
+      ThemeDauTay_1_54: -338681714
+      ThemeDauTay_1_55: -1722061991
+      ThemeDauTay_1_56: 195814994
+      ThemeDauTay_1_57: -1165835306
+      ThemeDauTay_1_58: 47294372
+      ThemeDauTay_1_59: 1967065136
+      ThemeDauTay_1_6: -822158815
+      ThemeDauTay_1_60: -1479558601
+      ThemeDauTay_1_61: -1150791794
+      ThemeDauTay_1_62: -538809482
+      ThemeDauTay_1_63: 896421046
+      ThemeDauTay_1_64: 1407910645
+      ThemeDauTay_1_65: 1045062842
+      ThemeDauTay_1_66: 1715189014
+      ThemeDauTay_1_67: -896717220
+      ThemeDauTay_1_68: -522310596
+      ThemeDauTay_1_69: 1483575036
+      ThemeDauTay_1_7: 977289710
+      ThemeDauTay_1_70: 561240259
+      ThemeDauTay_1_71: 69557149
+      ThemeDauTay_1_72: 1969158370
+      ThemeDauTay_1_73: -73746884
+      ThemeDauTay_1_74: -369947647
+      ThemeDauTay_1_75: -1009671025
+      ThemeDauTay_1_76: -767687212
+      ThemeDauTay_1_77: 1316160729
+      ThemeDauTay_1_78: 1361391648
+      ThemeDauTay_1_79: -1125144769
+      ThemeDauTay_1_8: -1144141425
+      ThemeDauTay_1_80: -154701697
+      ThemeDauTay_1_81: 1780755935
+      ThemeDauTay_1_82: 1953409273
+      ThemeDauTay_1_83: 770949838
+      ThemeDauTay_1_84: 689695289
+      ThemeDauTay_1_85: -794429761
+      ThemeDauTay_1_86: 742291614
+      ThemeDauTay_1_87: -103387319
+      ThemeDauTay_1_88: 794188899
+      ThemeDauTay_1_89: 1257448594
+      ThemeDauTay_1_9: 1247700415
+      ThemeDauTay_1_90: 1692679022
+      ThemeDauTay_1_91: 200117462
+      ThemeDauTay_1_92: 1272846409
+      ThemeDauTay_1_93: -1648370895
+      ThemeDauTay_1_94: -1743376352
+      ThemeDauTay_1_95: 1862305523
+      ThemeDauTay_1_96: 140178917
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
