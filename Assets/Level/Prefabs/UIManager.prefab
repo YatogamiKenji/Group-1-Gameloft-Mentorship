@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5206494067977487675}
   - component: {fileID: 4781829145993567180}
+  - component: {fileID: 833395897790218316}
+  - component: {fileID: 1881360012862887944}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -44,10 +46,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95835c818bb1a3744982fadcc4552706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resumeGameSO: {fileID: 11400000, guid: edc76f76ba09b96468938eaddae0c997, type: 2}
-  pauseGameSO: {fileID: 11400000, guid: daa3d700fde444f47875658aff208c81, type: 2}
   timerText: {fileID: 0}
   resultMessageText: {fileID: 0}
   pausePanel: {fileID: 0}
   resultPanel: {fileID: 0}
   timeSlider: {fileID: 0}
+--- !u!114 &833395897790218316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4260387374390295566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc62ae861a4be284ea9ff2b032db7731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4781829145993567180}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ShowPausePanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  publisher: {fileID: 11400000, guid: daa3d700fde444f47875658aff208c81, type: 2}
+--- !u!114 &1881360012862887944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4260387374390295566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc62ae861a4be284ea9ff2b032db7731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4781829145993567180}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ClosePausePanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  publisher: {fileID: 11400000, guid: edc76f76ba09b96468938eaddae0c997, type: 2}

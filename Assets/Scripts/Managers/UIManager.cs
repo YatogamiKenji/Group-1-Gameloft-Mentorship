@@ -6,9 +6,6 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private VoidPublisherSO resumeGameSO;
-    [SerializeField] private VoidPublisherSO pauseGameSO;
-
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private TextMeshProUGUI resultMessageText;
 
@@ -31,49 +28,37 @@ public class UIManager : MonoBehaviour
         UpdateTimerDisplay();
     }
 
-    private void OnEnable()
-    {
-        resumeGameSO.OnEventRaised += ClosePausePanel;
-        pauseGameSO.OnEventRaised += ShowPausePanel;
-    }
-
-    private void OnDisable()
-    {
-        resumeGameSO.OnEventRaised -= ClosePausePanel;
-        pauseGameSO.OnEventRaised -= ShowPausePanel;
-    }
-
     //Show panel dừng màn hình
-    private void ShowPausePanel()
+    public void ShowPausePanel()
     {
         pausePanel?.SetActive(true);
     }    
 
     //Close panel dừng màn hình
-    private void ClosePausePanel()
+    public void ClosePausePanel()
     {
         pausePanel?.SetActive(false);
     }
 
     //Show panel kết quả
-    private void ShowResultPanel()
+    public void ShowResultPanel()
     {
         resultPanel?.SetActive(true);
     }
 
     //Đóng panel kết quả
-    private void CloseResultPanel()
+    public void CloseResultPanel()
     {
         resultPanel.SetActive(false);
     }
 
     //Hiện tại chưa có menu hay settings
-    private void CloseOptionMenu()
+    public void CloseOptionMenu()
     {
         
     }
 
-    private void ShowOptionMenu()
+    public void ShowOptionMenu()
     {
 
     }
