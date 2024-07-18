@@ -8,6 +8,11 @@ public class UIManager : VoidEventListener
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private TextMeshProUGUI resultMessageText;
 
+    private void Start()
+    {
+        
+    }
+
     private void UpdateTimerDisplay(float time)
     {
 

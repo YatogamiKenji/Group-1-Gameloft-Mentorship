@@ -740,6 +740,28 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1645856742516144684, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
   m_PrefabInstance: {fileID: 2441156917225870289}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2441156917225870291 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7630510737582924290, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
+  m_PrefabInstance: {fileID: 2441156917225870289}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2441156917225870292 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 484808041368026003, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
+  m_PrefabInstance: {fileID: 2441156917225870289}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4016356884369428401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -752,6 +774,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4781829145993567180, guid: 0d6e74bba0760a1468babe9faaa09d77, type: 3}
+      propertyPath: timerText
+      value: 
+      objectReference: {fileID: 2441156917225870292}
+    - target: {fileID: 4781829145993567180, guid: 0d6e74bba0760a1468babe9faaa09d77, type: 3}
+      propertyPath: resultMessageText
+      value: 
+      objectReference: {fileID: 2441156917225870291}
     - target: {fileID: 5206494067977487675, guid: 0d6e74bba0760a1468babe9faaa09d77, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
