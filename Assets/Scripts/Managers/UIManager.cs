@@ -4,8 +4,10 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIManager : VoidEventListener
+public class UIManager : MonoBehaviour
 {
+    [SerializeField] private VoidPublisherSO resumeGameSO;
+    [SerializeField] private VoidPublisherSO pauseGameSO;
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private TextMeshProUGUI resultMessageText;
     [SerializeField] private GameObject pausePanel;
@@ -16,9 +18,12 @@ public class UIManager : VoidEventListener
         //Deactivate pausePanel và resultPanel
         pausePanel.SetActive(false);
         resultPanel.SetActive(false);
+    }
 
-        //chạy ClosePausePanel khi bắt được event từ ResumeGameSO
-        EventResponse.AddListener(ShowPausePanel);
+    private void OnEnable()
+    {
+        resumeGameSO.OnEventRaised += ClosePausePanel;
+        pauseGameSO.OnEventRaised += ShowPausePanel;
     }
 
     private void ShowPausePanel()
