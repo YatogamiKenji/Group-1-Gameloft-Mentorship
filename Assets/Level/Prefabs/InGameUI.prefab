@@ -221,6 +221,7 @@ GameObject:
   - component: {fileID: 4265445062032229063}
   - component: {fileID: 8484331656672255621}
   - component: {fileID: 3221655539683477455}
+  - component: {fileID: 5891461260163669250}
   m_Layer: 5
   m_Name: ResumeButton
   m_TagString: Untagged
@@ -330,6 +331,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5891461260163669250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860286950462190421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2132638021139142b6a08264a34b257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resumeGameSO: {fileID: 11400000, guid: edc76f76ba09b96468938eaddae0c997, type: 2}
 --- !u!1 &1076120446938808488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,6 +1322,7 @@ GameObject:
   - component: {fileID: 2010544413400458888}
   - component: {fileID: 7872394044247479428}
   - component: {fileID: 5157870182904337606}
+  - component: {fileID: 2772096407975066839}
   m_Layer: 5
   m_Name: PauseButton
   m_TagString: Untagged
@@ -1416,6 +1431,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2772096407975066839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5075136750490171342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ccab814de15d7847a3ebf9afe56b5bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseGameSO: {fileID: 0}
 --- !u!1 &5723243067917143728
 GameObject:
   m_ObjectHideFlags: 0

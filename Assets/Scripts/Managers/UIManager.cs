@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : VoidEventListener
 {
@@ -17,17 +18,17 @@ public class UIManager : VoidEventListener
         resultPanel.SetActive(false);
 
         //chạy ClosePausePanel khi bắt được event từ ResumeGameSO
-        EventResponse.AddListener(ClosePausePanel);
+        EventResponse.AddListener(ShowPausePanel);
     }
 
     private void ShowPausePanel()
     {
-
+        pausePanel?.SetActive(true);
     }    
 
     private void ClosePausePanel()
     {
-        pausePanel.SetActive(false);
+        pausePanel?.SetActive(false);
     }
 
     private void ShowResultPanel()
