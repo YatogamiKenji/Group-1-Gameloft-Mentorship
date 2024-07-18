@@ -43,29 +43,34 @@ public class UIManager : MonoBehaviour
         pauseGameSO.OnEventRaised -= ShowPausePanel;
     }
 
+    //Show panel dừng màn hình
     private void ShowPausePanel()
     {
         pausePanel?.SetActive(true);
     }    
 
+    //Close panel dừng màn hình
     private void ClosePausePanel()
     {
         pausePanel?.SetActive(false);
     }
 
+    //Show panel kết quả
     private void ShowResultPanel()
     {
-
+        resultPanel?.SetActive(true);
     }
 
+    //Đóng panel kết quả
     private void CloseResultPanel()
     {
-
+        resultPanel.SetActive(false);
     }
 
+    //Hiện tại chưa có menu hay settings
     private void CloseOptionMenu()
     {
-
+        
     }
 
     private void ShowOptionMenu()
@@ -80,6 +85,7 @@ public class UIManager : MonoBehaviour
         time = totalTime;
     }
 
+    //Đếm ngược thời gian sau khi set total time
     private void UpdateTimerDisplay()
     {
         if (time > 0)
@@ -93,6 +99,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    //Hiện kết quả thắng thua
     private void ShowResultMessage(string message)
     {
 

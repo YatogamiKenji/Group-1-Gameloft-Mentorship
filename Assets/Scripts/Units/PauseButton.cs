@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +9,7 @@ public class PauseButton : MonoBehaviour
 
     private void Awake()
     {
+        //Bắt sự kiện khi nhấn nút
         gameObject.GetComponent<Button>().onClick.AddListener(OnPauseButtonClick);
     }
 
