@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a0e2ecd11335d418a3861af2909876, type: 3}
+  m_Name: OnGameInit
+  m_EditorClassIdentifier: 
+  SizeConfig: {fileID: 11400000, guid: c513acae460b9ec4e995f19239e4d74c, type: 2}
+  ThemeConfig: {fileID: 11400000, guid: 8dfc2d03072edcc4690e343a02486db9, type: 2}

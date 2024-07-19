@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Level/Scenes/Test/GameSceneTest.unity
     guid: 24d36711d9e3dae46969600542fbffd6
+  - enabled: 1
+    path: Assets/Level/Scenes/Test/CardManagerTest.unity
+    guid: c13d38654a4427e4289a64f0073a3088
   m_configObjects: {}

@@ -41,6 +41,12 @@ public class CardManager : MonoBehaviour
         upCards = new List<Card>();
     }
 
+    public void SetTheme(CardThemeSO theme)
+    {
+        Debug.Log("Setting theme..." + theme.Name);
+        cardTheme = theme;
+    }    
+
     private Card CreateCard()
     {
         Card card = Instantiate(cardPrefab);
@@ -64,6 +70,7 @@ public class CardManager : MonoBehaviour
 
     public List<Card> CreateCardList(int w, int h)
     {
+        Debug.Log(cardTheme.Name);
         // Chọn index ngẫu nhiên từ phần tử đầu đến cuối của 1 Theme SO
         List<int> randomSprites = new List<int>();
 
