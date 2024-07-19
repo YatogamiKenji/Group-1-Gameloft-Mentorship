@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Pool;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameInitializer : MonoBehaviour
@@ -11,14 +12,13 @@ public class GameInitializer : MonoBehaviour
 
     private int numOfPair;
 
-    [SerializeField] private static int w;
-    [SerializeField] private static int h;
+    [SerializeField] private SizeConfigSO SizeConfig;
+    [SerializeField] private ThemeConfigSO ThemeConfig;
   
     //SẮP XẾP THẺ LẬT
     public void CreateTable(int w, int h)
     {
-        //Lấy list thẻ
-        List<Card> listCard = CardManager.Instance.CreateCardList(w, h);
+        
 
         //Set số cột của cardLayout để sắp xếp thẻ
         cardLayout.constraintCount = w;
@@ -29,6 +29,8 @@ public class GameInitializer : MonoBehaviour
         //Tổng số cặp thẻ
         numOfPair = w * h / 2;
 
+        //Lấy list thẻ
+        List<Card> listCard = CardManager.Instance.CreateCardList(w, h);
 
         while (listCard.Count != 0)
         {
@@ -39,11 +41,16 @@ public class GameInitializer : MonoBehaviour
         CardManager.Instance.StartCoroutineFLipBack();
     }
 
+    [SerializeField] private GameInitPublisherSO loadedEventSO;
+
     private void Start()
     {
-        //CreateTable(4, 4);
+        //Bắt sự kiện khi nhấn nút
+        loadedEventSO.RaiseThemeEvent(ThemeConfig.GetCurrentTheme());
+        loadedEventSO.RaiseSizeEvent(SizeConfig.crnW, SizeConfig.crnH);
+        
     }
-    
+
     public GameInitializer Instance;  
     private void Awake()
     {
@@ -55,6 +62,7 @@ public class GameInitializer : MonoBehaviour
         else
         {
             Instance = this;
+
         }
         
     }
