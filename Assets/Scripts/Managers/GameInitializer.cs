@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Pool;
 using UnityEngine.UI;
 
 public class GameInitializer : MonoBehaviour
@@ -10,8 +11,11 @@ public class GameInitializer : MonoBehaviour
 
     private int numOfPair;
 
+    [SerializeField] private static int w;
+    [SerializeField] private static int h;
+  
     //SẮP XẾP THẺ LẬT
-    public void CreateTable(int w = 4, int h = 4)
+    public void CreateTable(int w, int h)
     {
         //Lấy list thẻ
         List<Card> listCard = CardManager.Instance.CreateCardList(w, h);
@@ -37,6 +41,21 @@ public class GameInitializer : MonoBehaviour
 
     private void Start()
     {
-        CreateTable(4, 4);
+        //CreateTable(4, 4);
+    }
+    
+    public GameInitializer Instance;  
+    private void Awake()
+    {
+        // Singleton init
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }
+        
     }
 }

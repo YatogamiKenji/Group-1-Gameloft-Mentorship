@@ -7,23 +7,23 @@ using UnityEngine.UI;
 public class SceneEventListener : MonoBehaviour
 {
     [SerializeField] private UnityEvent<string> EventResponse;
-    [SerializeField] private UnityEvent<int, int> InitEventResponse;
+    
     [SerializeField] private LoadScenePublisherSO LoadPublisher;
-    [SerializeField] private GameInitPublisherSO InitPublisher;
+    
     private void OnEnable()
     {
         if(LoadPublisher != null)
             LoadPublisher.OnEventRaised += RespondLoadScene;
-        if (InitPublisher != null)
-            InitPublisher.OnEventRaised += InitGameScene;
+        
+
     }
 
     private void OnDisable()
     {
         if (LoadPublisher != null)
             LoadPublisher.OnEventRaised -= RespondLoadScene;
-        if (InitPublisher != null)
-            InitPublisher.OnEventRaised -= InitGameScene;
+        
+
     }
 
     private void RespondLoadScene(string SceneName)
@@ -32,8 +32,6 @@ public class SceneEventListener : MonoBehaviour
         EventResponse?.Invoke(SceneName);
     }
 
-    private void InitGameScene(int w, int h)
-    {
-        InitEventResponse?.Invoke(w, h);
-    }
+    
+
 }

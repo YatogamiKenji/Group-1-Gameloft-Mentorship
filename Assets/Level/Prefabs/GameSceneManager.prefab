@@ -74,6 +74,18 @@ MonoBehaviour:
         m_CallState: 2
   InitEventResponse:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7463009404786253788, guid: 948cb3cac7570bb4a92c38db82f0361a, type: 3}
+        m_TargetAssemblyTypeName: GameInitializer, Assembly-CSharp
+        m_MethodName: LoadTableInfo
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   LoadPublisher: {fileID: 11400000, guid: 0162cfd1a66271847864eda921812d05, type: 2}
-  InitPublisher: {fileID: 11400000, guid: 91027fbe5dc2b5a4b8be2159995deac1, type: 2}
+  InitPublisher: {fileID: 11400000, guid: 05217c888613c9844bbea63662299fee, type: 2}
