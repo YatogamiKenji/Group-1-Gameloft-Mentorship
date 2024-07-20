@@ -52,9 +52,11 @@ MonoBehaviour:
   timerText: {fileID: 0}
   resultMessageText: {fileID: 0}
   timeRemainText: {fileID: 0}
+  cardTheme: {fileID: 0}
   pausePanel: {fileID: 0}
   resultPanel: {fileID: 0}
   timeSlider: {fileID: 0}
+  backgroundImage: {fileID: 0}
 --- !u!114 &833395897790218316
 MonoBehaviour:
   m_ObjectHideFlags: 0
