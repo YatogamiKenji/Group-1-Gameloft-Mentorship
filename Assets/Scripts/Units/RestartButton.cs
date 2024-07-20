@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class RestartButton : MonoBehaviour
 {
-    [SerializeField] private GameInitPublisherSO gameInitSO;
+    [SerializeField] private VoidPublisherSO restartGameSO;
 
     private void Awake()
     {
@@ -14,7 +14,6 @@ public class RestartButton : MonoBehaviour
 
     private void OnRestartButtonClick()
     {
-        gameInitSO.RaiseSizeEvent();
-        gameInitSO.RaiseThemeEvent();
+        restartGameSO.RaiseEvent();
     }
 }
