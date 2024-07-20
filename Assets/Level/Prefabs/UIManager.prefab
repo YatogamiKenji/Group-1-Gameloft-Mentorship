@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 0}
   resultMessageText: {fileID: 0}
+  timeRemainText: {fileID: 0}
   pausePanel: {fileID: 0}
   resultPanel: {fileID: 0}
   timeSlider: {fileID: 0}

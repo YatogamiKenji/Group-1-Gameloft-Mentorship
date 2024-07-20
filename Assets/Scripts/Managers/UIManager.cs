@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private TextMeshProUGUI resultMessageText;
+    [SerializeField] private TextMeshProUGUI timeRemainText;
 
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject resultPanel;
@@ -16,6 +17,8 @@ public class UIManager : MonoBehaviour
     //Totaltime của game được set để chạy trong update 
     private float totalTime;
     private float time;
+    private string resultMessage;
+    private float timeRemaining;
 
     private void Start()
     {
@@ -32,7 +35,7 @@ public class UIManager : MonoBehaviour
     public void ShowPausePanel()
     {
         pausePanel?.SetActive(true);
-    }    
+    }
 
     //Close panel dừng màn hình
     public void ClosePausePanel()
@@ -43,6 +46,8 @@ public class UIManager : MonoBehaviour
     //Show panel kết quả
     public void ShowResultPanel()
     {
+        resultMessageText.text = resultMessage;
+        timeRemainText.text = timeRemaining.ToString();
         resultPanel?.SetActive(true);
     }
 
@@ -52,7 +57,6 @@ public class UIManager : MonoBehaviour
         resultPanel.SetActive(false);
     }
 
-    //Hiện tại chưa có menu hay settings
     public void CloseOptionMenu()
     {
         
@@ -84,9 +88,4 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    //Hiện kết quả thắng thua
-    private void ShowResultMessage(string message)
-    {
-
-    }
 }

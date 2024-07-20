@@ -583,26 +583,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1899535186}
     m_Modifications:
-    - target: {fileID: 484808041368026003, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_fontStyle
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1027485819964150811, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 285485525, guid: 55a6c0816e947ba4e9c4d2d84aed69d0, type: 3}
-    - target: {fileID: 1027485819964150811, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1027485819964150811, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1027485819964150811, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1645856742516144684, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -683,75 +663,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2037693784125029487, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2772096407975066839, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: pauseImage
-      value: 
-      objectReference: {fileID: 317619682, guid: 55a6c0816e947ba4e9c4d2d84aed69d0, type: 3}
-    - target: {fileID: 5013091927504906840, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 521682063, guid: 55a6c0816e947ba4e9c4d2d84aed69d0, type: 3}
-    - target: {fileID: 5013091927504906840, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5013091927504906840, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5013091927504906840, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5013091927504906840, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_FillAmount
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5671249280522872898, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5671249280522872898, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 599448515, guid: 55a6c0816e947ba4e9c4d2d84aed69d0, type: 3}
-    - target: {fileID: 5671249280522872898, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5671249280522872898, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5671249280522872898, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5899799086967447494, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7704084793344493078, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
       propertyPath: m_Name
       value: InGameUI
       objectReference: {fileID: 0}
-    - target: {fileID: 8324311506119156949, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_Name
-      value: TimeRemainText_Word
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 9156952894147032061, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-    - {fileID: 7569908210707260923, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-    - {fileID: 4265626102017831477, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-    - {fileID: 1076120446938808488, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-    - {fileID: 2531659648456436527, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-    - {fileID: 5899799086967447494, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-    - {fileID: 2037693784125029487, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
@@ -795,17 +712,9 @@ PrefabInstance:
       value: UIManager
       objectReference: {fileID: 0}
     - target: {fileID: 4781829145993567180, guid: 0d6e74bba0760a1468babe9faaa09d77, type: 3}
-      propertyPath: publisher
-      value: 
-      objectReference: {fileID: 11400000, guid: daa3d700fde444f47875658aff208c81, type: 2}
-    - target: {fileID: 4781829145993567180, guid: 0d6e74bba0760a1468babe9faaa09d77, type: 3}
       propertyPath: timerText
       value: 
       objectReference: {fileID: 2441156917225870292}
-    - target: {fileID: 4781829145993567180, guid: 0d6e74bba0760a1468babe9faaa09d77, type: 3}
-      propertyPath: totalTime
-      value: 120
-      objectReference: {fileID: 0}
     - target: {fileID: 4781829145993567180, guid: 0d6e74bba0760a1468babe9faaa09d77, type: 3}
       propertyPath: pausePanel
       value: 
