@@ -57,10 +57,10 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &1297483255123676433
 MonoBehaviour:
@@ -112,6 +112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4282746417548278070}
   - component: {fileID: 7463009404786253788}
+  - component: {fileID: 9172889384477054716}
   m_Layer: 0
   m_Name: GameInitializer Prefab
   m_TagString: Untagged
@@ -150,7 +151,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardField: {fileID: 8565208387326016342}
   cardLayout: {fileID: 3032891951779767091}
-  spacing: {x: 10, y: 5}
+  spacing: {x: 5, y: 5}
+  SizeConfig: {fileID: 11400000, guid: c513acae460b9ec4e995f19239e4d74c, type: 2}
+  ThemeConfig: {fileID: 11400000, guid: 8dfc2d03072edcc4690e343a02486db9, type: 2}
+  loadedEventSO: {fileID: 11400000, guid: 05217c888613c9844bbea63662299fee, type: 2}
+  Instance: {fileID: 0}
+--- !u!114 &9172889384477054716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209777441003320234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 697749263be5be94fb6ea58774f0eff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7463009404786253788}
+        m_TargetAssemblyTypeName: GameInitializer, Assembly-CSharp
+        m_MethodName: CreateTable
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  InitThemeEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8754609667897822100}
+        m_TargetAssemblyTypeName: CardManager, Assembly-CSharp
+        m_MethodName: SetTheme
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  InitPublisher: {fileID: 11400000, guid: 05217c888613c9844bbea63662299fee, type: 2}
 --- !u!1 &5702071070293007645
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,8 +232,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1381795265833055039}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0.1}
+  m_AnchorMax: {x: 1, y: 0.7}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -210,7 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.57254905}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -244,12 +292,12 @@ MonoBehaviour:
     m_Right: 5
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 100, y: 100}
   m_Spacing: {x: 0, y: 0}
-  m_Constraint: 0
+  m_Constraint: 1
   m_ConstraintCount: 2
 --- !u!1 &7889135203801204374
 GameObject:
@@ -342,4 +390,3 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   publisher: {fileID: 11400000, guid: 7260a6e694470fa49abdf9e2ef6d94ac, type: 2}
-
