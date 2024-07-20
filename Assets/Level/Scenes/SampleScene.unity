@@ -573,6 +573,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardField: {fileID: 0}
   cardLayout: {fileID: 0}
+  spacing: {x: 0, y: 0}
+  Instance: {fileID: 0}
 --- !u!1001 &2441156917225870289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -661,14 +663,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2772096407975066839, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: pauseGameSO
-      value: 
-      objectReference: {fileID: 11400000, guid: daa3d700fde444f47875658aff208c81, type: 2}
-    - target: {fileID: 5013091927504906840, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
-      propertyPath: m_FillAmount
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7704084793344493078, guid: f3fa48cd5c587734aa658fd0e0482b53, type: 3}
       propertyPath: m_Name
       value: InGameUI
@@ -718,17 +712,9 @@ PrefabInstance:
       value: UIManager
       objectReference: {fileID: 0}
     - target: {fileID: 4781829145993567180, guid: 0d6e74bba0760a1468babe9faaa09d77, type: 3}
-      propertyPath: publisher
-      value: 
-      objectReference: {fileID: 11400000, guid: daa3d700fde444f47875658aff208c81, type: 2}
-    - target: {fileID: 4781829145993567180, guid: 0d6e74bba0760a1468babe9faaa09d77, type: 3}
       propertyPath: timerText
       value: 
       objectReference: {fileID: 2441156917225870292}
-    - target: {fileID: 4781829145993567180, guid: 0d6e74bba0760a1468babe9faaa09d77, type: 3}
-      propertyPath: totalTime
-      value: 120
-      objectReference: {fileID: 0}
     - target: {fileID: 4781829145993567180, guid: 0d6e74bba0760a1468babe9faaa09d77, type: 3}
       propertyPath: pausePanel
       value: 

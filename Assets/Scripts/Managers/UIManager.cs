@@ -6,8 +6,11 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    [SerializeField] private VoidPublisherSO gameOverSO;
+
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private TextMeshProUGUI resultMessageText;
+    [SerializeField] private TextMeshProUGUI timeRemainText;
 
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject resultPanel;
@@ -21,6 +24,8 @@ public class UIManager : MonoBehaviour
     {
         pausePanel.SetActive(false);
         resultPanel.SetActive(false);
+
+        SetTotalTime(10f);
     }
 
     private void Update()
@@ -32,7 +37,7 @@ public class UIManager : MonoBehaviour
     public void ShowPausePanel()
     {
         pausePanel?.SetActive(true);
-    }    
+    }
 
     //Close panel dừng màn hình
     public void ClosePausePanel()
@@ -40,9 +45,21 @@ public class UIManager : MonoBehaviour
         pausePanel?.SetActive(false);
     }
 
-    //Show panel kết quả
-    public void ShowResultPanel()
+    //Show panel GameOver
+    public void ShowGameOverResultPanel()
     {
+        resultMessageText.text = "Game Over";
+        timeRemainText.text = time.ToString();
+        resultPanel?.SetActive(true);
+    }
+
+    //Show panel kết quả You win
+    public void ShowYouWinResultPanel()
+    {
+        resultMessageText.text = "You win";
+        int minutes = (int)(time / 60);
+        int seconds = (int)(time % 60);
+        timeRemainText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
         resultPanel?.SetActive(true);
     }
 
@@ -52,7 +69,6 @@ public class UIManager : MonoBehaviour
         resultPanel.SetActive(false);
     }
 
-    //Hiện tại chưa có menu hay settings
     public void CloseOptionMenu()
     {
         
@@ -82,11 +98,11 @@ public class UIManager : MonoBehaviour
 
             timeSlider.fillAmount = time / totalTime;
         }
+        else
+        {
+            time = 0;
+            gameOverSO.RaiseEvent();
+        }
     }
 
-    //Hiện kết quả thắng thua
-    private void ShowResultMessage(string message)
-    {
-
-    }
 }

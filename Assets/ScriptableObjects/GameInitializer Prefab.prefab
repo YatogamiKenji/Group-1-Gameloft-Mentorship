@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a633abb77b3bc46bb09294f775b9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+
   cardField: {fileID: 8565208387326016342}
   cardLayout: {fileID: 3032891951779767091}
   spacing: {x: 5, y: 5}
@@ -199,6 +200,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   InitPublisher: {fileID: 11400000, guid: 05217c888613c9844bbea63662299fee, type: 2}
+
 --- !u!1 &5702071070293007645
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,7 +219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8565208387326016342
 RectTransform:
   m_ObjectHideFlags: 0
