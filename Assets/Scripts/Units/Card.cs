@@ -27,6 +27,7 @@ public class Card : MonoBehaviour
     public void CheckMatch()
     {
         button.enabled = false;
+        AudioManager.Instance.PlaySound("Correct SFX");
     }
 
     public void Flip()
