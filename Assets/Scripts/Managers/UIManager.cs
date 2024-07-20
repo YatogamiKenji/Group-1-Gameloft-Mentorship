@@ -12,9 +12,11 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI resultMessageText;
     [SerializeField] private TextMeshProUGUI timeRemainText;
 
+    [SerializeField] private CardThemeSO cardTheme;
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject resultPanel;
     [SerializeField] private Image timeSlider;
+    [SerializeField] private Image backgroundImage;
 
     //Totaltime của game được set để chạy trong update 
     private float totalTime;
@@ -24,7 +26,8 @@ public class UIManager : MonoBehaviour
     {
         pausePanel.SetActive(false);
         resultPanel.SetActive(false);
-
+        backgroundImage.sprite = cardTheme.ThemeImage;
+        Time.timeScale = 1;
         SetTotalTime(10f);
     }
 
@@ -78,8 +81,7 @@ public class UIManager : MonoBehaviour
     public void ShowOptionMenu()
     {
 
-    }
-
+    } 
     //Set total time từ khi bắt đầu game để chạy timer
     private void SetTotalTime(float totalTime)
     {
@@ -104,6 +106,11 @@ public class UIManager : MonoBehaviour
             time = 0;
             gameOverSO.RaiseEvent();
         }
+    }
+
+    public void SetTheme(CardThemeSO theme)
+    {
+        cardTheme = theme;
     }
 
 }

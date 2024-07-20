@@ -10,6 +10,8 @@ public class GameInitializer : MonoBehaviour
 
     [SerializeField] private RectTransform cardField;
     [SerializeField] private GridLayoutGroup cardLayout;
+    
+
     [SerializeField] private Vector2 spacing;
 
     private int numOfCard;
@@ -50,10 +52,15 @@ public class GameInitializer : MonoBehaviour
     private void Start()
     {
         //Bắt sự kiện khi nhấn nút
-        loadedEventSO.RaiseThemeEvent(ThemeConfig.GetCurrentTheme());
-        loadedEventSO.RaiseSizeEvent(SizeConfig.crnW, SizeConfig.crnH);
+        StartGame();
         
     }
+
+    public void StartGame()
+    {
+        loadedEventSO.RaiseThemeEvent(ThemeConfig.GetCurrentTheme());
+        loadedEventSO.RaiseSizeEvent(SizeConfig.crnW, SizeConfig.crnH);
+    }    
 
     private void Update()
     {
