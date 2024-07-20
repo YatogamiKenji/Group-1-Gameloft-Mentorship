@@ -12,7 +12,6 @@ public class GameLoadedEventListener : MonoBehaviour
     [SerializeField] private GameInitPublisherSO InitPublisher;
     private void OnEnable()
     {
-        SceneManager.sceneLoaded += OnSceneLoaded;
         if (InitPublisher != null)
         {
             InitPublisher.OnSizeEventRaised += InitGameSize;
@@ -23,19 +22,11 @@ public class GameLoadedEventListener : MonoBehaviour
 
     private void OnDisable()
     {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
         if (InitPublisher != null)
         {
             InitPublisher.OnSizeEventRaised -= InitGameSize;
             InitPublisher.OnThemeEventRaised -= InitGameTheme;
         }
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        InitPublisher.RaiseThemeEvent();
-        InitPublisher.RaiseSizeEvent();
-        
     }
 
     private void InitGameSize(int w, int h)

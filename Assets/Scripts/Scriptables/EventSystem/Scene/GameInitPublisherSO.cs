@@ -8,18 +8,15 @@ using UnityEngine.UI;
 public class GameInitPublisherSO : ScriptableObject
 {
     public UnityAction<int, int> OnSizeEventRaised;
-    public SizeConfigSO SizeConfig;
-
     public UnityAction<CardThemeSO> OnThemeEventRaised;
-    public ThemeConfigSO ThemeConfig;
 
-    public void RaiseSizeEvent()
+    public void RaiseSizeEvent(int w, int h)
     {
-        OnSizeEventRaised?.Invoke(SizeConfig.crnW, SizeConfig.crnH);
+        OnSizeEventRaised?.Invoke(w, h);
     }
 
-    public void RaiseThemeEvent()
+    public void RaiseThemeEvent(CardThemeSO theme)
     {
-        OnThemeEventRaised?.Invoke(ThemeConfig.GetCurrentTheme());
+        OnThemeEventRaised?.Invoke(theme);
     }
 }

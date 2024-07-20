@@ -17,9 +17,20 @@ public class GameSceneManager : MonoBehaviour
         
     }
 
+    public void PlaySound(string name)
+    {
+        AudioManager.Instance.PlaySound(name);
+    }
+    public void StopSound(string name)
+    {
+        AudioManager.Instance.StopSound(name);
+    }
     public void LoadScene(string SceneName)
     {
         Debug.Log("LOADING "+SceneName);
         SceneManager.LoadScene(SceneName);
-    }    
+    }
+
+    
+
 }
