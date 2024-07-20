@@ -34,6 +34,7 @@ public class PauseButton : MonoBehaviour
         if (!isPaused)
         {
             //Nếu game chưa dừng thì dừng game và chuyển sprite thành nút resume
+            Time.timeScale = 0;
             isPaused = true;
             pauseGameSO.RaiseEvent();
             buttonImage.sprite = resumeSprite;
@@ -41,6 +42,7 @@ public class PauseButton : MonoBehaviour
         else
         {
             //Nếu game đang dừng thì tiếp tục và chuyển thành nút pause
+            Time.timeScale = 1;
             isPaused = false;
             resumeGameSO.RaiseEvent();
             buttonImage.sprite = pauseSprite;

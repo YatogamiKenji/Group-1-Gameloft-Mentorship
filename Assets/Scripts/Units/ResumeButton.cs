@@ -15,6 +15,7 @@ public class ResumeButton : MonoBehaviour
 
     private void OnResumeButtonClick()
     {
+        Time.timeScale = 1;
         resumeGameSO.RaiseEvent();
     }
 }
