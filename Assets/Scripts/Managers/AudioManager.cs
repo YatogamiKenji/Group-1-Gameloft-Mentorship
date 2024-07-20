@@ -6,20 +6,26 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager Instance {get; private set; }
+    private static AudioManager instance;
+
+    public static AudioManager Instance { get => instance;}
+
     public Sound[] sounds;
+
+  
     private void Awake()
     {
         // Singleton init
-        if (Instance != null && Instance != this)
+        if (instance != null && instance != this)
         {
             Destroy(this);
         }
         else
         {
-            Instance = this;
+            instance = this;
         }
         DontDestroyOnLoad(gameObject);
+        // Add sound clip and its settings based on sounds list
         foreach (Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -35,6 +41,7 @@ public class AudioManager : MonoBehaviour
     }
     public void PlaySound(string name)
     {
+        //Find sound by name and play if exsist
         Sound s = Array.Find(sounds, sound => sound.name == name);
         if (s == null)
         {
@@ -44,9 +51,4 @@ public class AudioManager : MonoBehaviour
         s.source.Play();
     }
 
-
-    void Update()
-    {
-        
-    }
 }

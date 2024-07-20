@@ -45,9 +45,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
+  - name: Button Click SFX
+    clip: {fileID: 8300000, guid: 8969fde3a43eef2449639506bde4f89f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   - name: Test Theme
     clip: {fileID: 8300000, guid: d5b78df1aff2b9d44b60782750ed1858, type: 3}
-    volume: 0.5
+    volume: 0.3
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: Correct SFX
+    clip: {fileID: 8300000, guid: cf9e77f5925e6ca42bab62b0cd369fba, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
