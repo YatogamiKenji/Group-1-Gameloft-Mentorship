@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
@@ -10,7 +11,9 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager Instance { get => instance;}
 
-    public Sound[] sounds;
+    [SerializeField] private AudioMixerGroup musicMixerGroup;
+    [SerializeField] private AudioMixerGroup sfxMixerGroup;
+    [SerializeField] private Sound[] sounds;
 
   
     private void Awake()
@@ -25,6 +28,7 @@ public class AudioManager : MonoBehaviour
             instance = this;
         }
         DontDestroyOnLoad(gameObject);
+
         // Add sound clip and its settings based on sounds list
         foreach (Sound s in sounds)
         {
@@ -33,11 +37,22 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
+            switch (s.audioType)
+            {
+                case Sound.AudioType.music:
+                    s.source.outputAudioMixerGroup = musicMixerGroup;
+                    break;
+
+                case Sound.AudioType.sfx:
+                    s.source.outputAudioMixerGroup = sfxMixerGroup;
+                    break;
+            }
+            if (s.playOnAwake) 
+                s.source.Play();
         }
     }
     private void Start()
     {
-        PlaySound("Test Theme");
     }
     public void PlaySound(string name)
     {
@@ -50,5 +65,16 @@ public class AudioManager : MonoBehaviour
         }
         s.source.Play();
     }
+    public void StopSound(string name)
+    {
+        //Find sound by name and play if exsist
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound" + s.name + "was not found");
+            return;
+        }
+        s.source.Stop();
 
+    }
 }

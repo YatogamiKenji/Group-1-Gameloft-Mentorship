@@ -3,6 +3,9 @@ using UnityEngine;
 
 [System.Serializable]
 public class Sound {
+    public enum AudioType { sfx, music }
+
+    public AudioType audioType;
 
     public string name;
 
@@ -15,6 +18,8 @@ public class Sound {
     public float pitch;
 
     public bool loop;
+
+    public bool playOnAwake;
 
     [HideInInspector]
     public AudioSource source;
