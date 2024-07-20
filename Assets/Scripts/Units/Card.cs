@@ -27,6 +27,7 @@ public class Card : MonoBehaviour
     public void CheckMatch()
     {
         button.enabled = false;
+        GameInitializer.Instance.CheckMatch();
         AudioManager.Instance.PlaySound("Correct SFX");
     }
 
