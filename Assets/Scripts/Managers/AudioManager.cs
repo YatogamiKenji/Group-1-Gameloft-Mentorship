@@ -26,8 +26,9 @@ public class AudioManager : MonoBehaviour
         else
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
         }
-        DontDestroyOnLoad(gameObject);
+        
 
         // Add sound clip and its settings based on sounds list
         foreach (Sound s in sounds)
@@ -76,5 +77,26 @@ public class AudioManager : MonoBehaviour
         }
         s.source.Stop();
 
+    }
+
+    public void UpdateMixerVolume(float musicVolume = -1, float soundEffectsVolume = -1)
+    {
+        if (musicVolume != -1)
+        {
+            musicMixerGroup.audioMixer.SetFloat("Music Volume", musicVolume * 20);
+        }    
+        if (soundEffectsVolume != -1)
+        {
+            sfxMixerGroup.audioMixer.SetFloat("SFX Volume", soundEffectsVolume * 20);
+        }  
+    }
+    public float GetValue(string name)
+    {
+        float result = -1f;
+        if (name == "Music Volume")
+            musicMixerGroup.audioMixer.GetFloat(name, out result);
+        else if (name == "SFX Volume")
+            sfxMixerGroup.audioMixer.GetFloat(name, out result);
+        return result/20;
     }
 }
