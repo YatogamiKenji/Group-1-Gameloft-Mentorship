@@ -419,6 +419,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 270414691}
     - target: {fileID: 7463009404786253788, guid: 948cb3cac7570bb4a92c38db82f0361a, type: 3}
+      propertyPath: winGameSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 64383113cc30478439ab2363d5bb0799, type: 2}
+    - target: {fileID: 7463009404786253788, guid: 948cb3cac7570bb4a92c38db82f0361a, type: 3}
       propertyPath: SizeConfig
       value: 
       objectReference: {fileID: 11400000, guid: c513acae460b9ec4e995f19239e4d74c, type: 2}

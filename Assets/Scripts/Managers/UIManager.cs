@@ -56,6 +56,7 @@ public class UIManager : MonoBehaviour
     //Show panel kết quả You win
     public void ShowYouWinResultPanel()
     {
+        Time.timeScale = 0;
         resultMessageText.text = "You win";
         int minutes = (int)(time / 60);
         int seconds = (int)(time % 60);

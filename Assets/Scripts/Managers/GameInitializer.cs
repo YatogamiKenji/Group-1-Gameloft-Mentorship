@@ -6,11 +6,13 @@ using UnityEngine.UI;
 
 public class GameInitializer : MonoBehaviour
 {
+    [SerializeField] private VoidPublisherSO winGameSO;
+
     [SerializeField] private RectTransform cardField;
     [SerializeField] private GridLayoutGroup cardLayout;
     [SerializeField] private Vector2 spacing;
 
-    private int numOfPair;
+    private int numOfCard;
 
     [SerializeField] private SizeConfigSO SizeConfig;
     [SerializeField] private ThemeConfigSO ThemeConfig;
@@ -26,8 +28,10 @@ public class GameInitializer : MonoBehaviour
         cardLayout.cellSize = new Vector2((cardField.rect.width - spacing.x * w) / w, (cardField.rect.height - spacing.y * h) / h);
         cardLayout.spacing = new Vector2((cardField.rect.width - w * cardLayout.cellSize.x) / w, (cardField.rect.height - h * cardLayout.cellSize.y) / h);
 
-        //Tổng số cặp thẻ
-        numOfPair = w * h / 2;
+        //Tổng số card
+        numOfCard = w * h;
+
+        Debug.Log("NumofPair" + numOfCard);
 
         //Lấy list thẻ
         List<Card> listCard = CardManager.Instance.CreateCardList(w, h);
@@ -51,7 +55,16 @@ public class GameInitializer : MonoBehaviour
         
     }
 
-    public GameInitializer Instance;  
+    private void Update()
+    {
+        if ( CheckWin())
+        {
+            winGameSO.RaiseEvent();
+        }
+    }
+
+    private static GameInitializer instance;
+    public static GameInitializer Instance { get => instance; }
     private void Awake()
     {
         // Singleton init
@@ -61,9 +74,18 @@ public class GameInitializer : MonoBehaviour
         }
         else
         {
-            Instance = this;
+            instance = this;
 
         }
         
+    }
+    public bool CheckWin()
+    {
+        return (numOfCard == 0);
+    }
+
+    public void CheckMatch()
+    {
+        numOfCard--;
     }
 }
