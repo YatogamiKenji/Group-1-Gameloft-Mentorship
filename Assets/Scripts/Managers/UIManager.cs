@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
         pausePanel.SetActive(false);
         resultPanel.SetActive(false);
 
-        SetTotalTime(60f);
+        SetTotalTime(10f);
     }
 
     private void Update()
